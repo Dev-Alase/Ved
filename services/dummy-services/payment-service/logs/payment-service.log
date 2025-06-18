@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-18T09:56:42.854545", "service": "payment-service", "env": "staging", "logLevel": "INFO", "message": "Payment processed successfully", "rawLog": "Payment processed successfully", "metadata": {"transaction_id": 5568}}
+{"timestamp": "2025-06-18T09:56:43.813403", "service": "payment-service", "env": "staging", "logLevel": "ERROR", "message": "Payment gateway failure", "rawLog": "Payment gateway failure", "metadata": {"error_code": 502}}
+{"timestamp": "2025-06-18T09:56:48.052309", "service": "payment-service", "env": "staging", "logLevel": "WARNING", "message": "Refund initiated", "rawLog": "Refund initiated", "metadata": {"transaction_id": 6636}}
+{"timestamp": "2025-06-18T09:56:49.116819", "service": "payment-service", "env": "staging", "logLevel": "WARNING", "message": "Refund initiated", "rawLog": "Refund initiated", "metadata": {"transaction_id": 7216}}
+{"timestamp": "2025-06-18T09:56:50.001126", "service": "payment-service", "env": "staging", "logLevel": "WARNING", "message": "Refund initiated", "rawLog": "Refund initiated", "metadata": {"transaction_id": 6113}}
+{"timestamp": "2025-06-18T09:56:50.822640", "service": "payment-service", "env": "staging", "logLevel": "WARNING", "message": "Refund initiated", "rawLog": "Refund initiated", "metadata": {"transaction_id": 2285}}

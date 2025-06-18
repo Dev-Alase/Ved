@@ -1,0 +1,26 @@
+name: CI Pipeline
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Simulate build
+        run: |
+          mkdir -p logs
+          echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"job\": \"build\", \"logLevel\": \"INFO\", \"message\": \"Building project\", \"metadata\": {}}" >> logs/ci.log
+          if [ $((RANDOM % 2)) -eq 0 ]; then
+            echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"job\": \"build\", \"logLevel\": \"ERROR\", \"message\": \"Build failed\", \"metadata\": {\"error_code\": 1}}" >> logs/ci.log
+            exit 1
+          fi
+          echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"job\": \"build\", \"logLevel\": \"INFO\", \"message\": \"Build successful\", \"metadata\": {}}" >> logs/ci.log
+      - name: Simulate deploy
+        run: |
+          echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"job\": \"deploy\", \"logLevel\": \"INFO\", \"message\": \"Deploying to staging\", \"metadata\": {}}" >> logs/ci.log
+          echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"job\": \"deploy\", \"logLevel\": \"WARNING\", \"message\": \"Deployment rate limit warning\", \"metadata\": {\"limit\": 100}}" >> logs/ci.log
+      - name: Debug log file
+        run: |
+          pwd
+          ls -la logs/
+          cat logs/ci.log

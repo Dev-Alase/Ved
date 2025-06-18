@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  auth-service:
+    build:
+      context: ./services/dummy-services/auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./services/dummy-services/auth-service/logs:/app/logs
+  payment-service:
+    build:
+      context: ./services/dummy-services/payment-service
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./services/dummy-services/payment-service/logs:/app/logs
