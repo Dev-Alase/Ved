@@ -2,3 +2,16 @@
 {"timestamp": "2025-06-18T10:29:11Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}
 {"timestamp": "2025-06-18T10:37:05Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
 {"timestamp": "2025-06-18T10:37:05Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}
+{"timestamp": "2025-06-24T09:38:35Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-06-24T09:38:35Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}
+{"timestamp": "2025-06-24T09:58:24Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-06-24T09:58:24Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}
+{"timestamp": "2025-06-24T10:02:39Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-06-24T10:02:39Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}
+{"timestamp": "2025-06-24T10:02:59Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-06-24T10:02:59Z", "service": "terraform", "logLevel": "ERROR", "message": "Apply failed", "metadata": {"error_code": "invalid_config"}}
+{"timestamp": "2025-06-24T10:03:00Z", "service": "terraform", "logLevel": "ERROR", "message": "Apply failed", "metadata": {"error_code": "invalid_config"}}
+{"timestamp": "2025-06-24T10:12:55Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-06-24T10:12:55Z", "service": "terraform", "logLevel": "ERROR", "message": "Apply failed", "metadata": {"error_code": "invalid_config"}}
+{"timestamp": "2025-06-24T10:13:45Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-06-24T10:13:45Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}

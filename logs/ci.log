@@ -8,3 +8,19 @@
 {"timestamp": "2025-06-18T10:36:37Z", "job": "deploy", "logLevel": "WARNING", "message": "Deployment rate limit warning", "metadata": {"limit": 100}}
 {"timestamp": "2025-06-18T10:45:16Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
 {"timestamp": "2025-06-18T10:45:16Z", "job": "build", "logLevel": "ERROR", "message": "Build failed", "metadata": {"error_code": 1}}
+{"timestamp": "2025-06-24T08:41:41Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
+{"timestamp": "2025-06-24T08:41:41Z", "job": "build", "logLevel": "INFO", "message": "Build successful", "metadata": {}}
+{"timestamp": "2025-06-24T08:41:41Z", "job": "deploy", "logLevel": "INFO", "message": "Deploying to staging", "metadata": {}}
+{"timestamp": "2025-06-24T08:41:41Z", "job": "deploy", "logLevel": "WARNING", "message": "Deployment rate limit warning", "metadata": {"limit": 100}}
+{"timestamp": "2025-06-24T08:42:05Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
+{"timestamp": "2025-06-24T08:42:05Z", "job": "build", "logLevel": "ERROR", "message": "Build failed", "metadata": {"error_code": 1}}
+{"timestamp": "2025-06-24T09:39:26Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
+{"timestamp": "2025-06-24T09:39:26Z", "job": "build", "logLevel": "ERROR", "message": "Build failed", "metadata": {"error_code": 1}}
+{"timestamp": "2025-06-24T09:39:45Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
+{"timestamp": "2025-06-24T09:39:45Z", "job": "build", "logLevel": "ERROR", "message": "Build failed", "metadata": {"error_code": 1}}
+{"timestamp": "2025-06-24T10:13:34Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
+{"timestamp": "2025-06-24T10:13:34Z", "job": "build", "logLevel": "ERROR", "message": "Build failed", "metadata": {"error_code": 1}}
+{"timestamp": "2025-06-24T10:15:07Z", "job": "build", "logLevel": "INFO", "message": "Building project", "metadata": {}}
+{"timestamp": "2025-06-24T10:15:07Z", "job": "build", "logLevel": "INFO", "message": "Build successful", "metadata": {}}
+{"timestamp": "2025-06-24T10:15:08Z", "job": "deploy", "logLevel": "INFO", "message": "Deploying to staging", "metadata": {}}
+{"timestamp": "2025-06-24T10:15:08Z", "job": "deploy", "logLevel": "WARNING", "message": "Deployment rate limit warning", "metadata": {"limit": 100}}

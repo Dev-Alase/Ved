@@ -1,0 +1,34 @@
+{
+        "sources": [
+            {
+                "type": "file",
+                "path": "logs/ci.log",
+                "adapter": "ci_cd.github_actions_adapter"
+            },
+            {
+                "type": "file",
+                "path": "logs/k8s.log",
+                "adapter": "infra.k8s_adapter"
+            },
+            {
+                "type": "file",
+                "path": "logs/terraform.log",
+                "adapter": "infra.terraform_adapter"
+            },
+            {
+                "type": "file",
+                "path": "services/dummy-services/auth-service/logs/auth-service.log",
+                "adapter": "microservices.fastapi_adapter"
+            },
+            {
+                "type": "file",
+                "path": "services/dummy-services/payment-service/logs/payment-service.log",
+                "adapter": "microservices.fastapi_adapter"
+            }
+        ],
+        "api_endpoint": "http://0.0.0.0:5000/logs",
+        "elasticsearch": {
+            "host": "elasticsearch",
+            "port": 9200
+        }
+}
