@@ -15,3 +15,5 @@
 {"timestamp": "2025-06-24T10:12:55Z", "service": "terraform", "logLevel": "ERROR", "message": "Apply failed", "metadata": {"error_code": "invalid_config"}}
 {"timestamp": "2025-06-24T10:13:45Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
 {"timestamp": "2025-06-24T10:13:45Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}
+{"timestamp": "2025-07-01T05:32:37Z", "service": "terraform", "logLevel": "INFO", "message": "Planning infrastructure", "metadata": {}}
+{"timestamp": "2025-07-01T05:32:37Z", "service": "terraform", "logLevel": "INFO", "message": "Apply successful", "metadata": {"resources": 2}}

@@ -15,7 +15,10 @@ def load_adapter(adapter_name):
         if project_root not in sys.path:
             sys.path.insert(0, project_root)
         
-        # Import the adapter module using the dotted path
+        # Default to general adapter if no specific adapter is provided
+        if not adapter_name or adapter_name == "default":
+            return importlib.import_module("adapters.common.general_adapter").normalize
+        # Import the specified adapter module using the dotted path
         module = importlib.import_module(f"adapters.{adapter_name}")
         return module.normalize
     except (ImportError, AttributeError) as e:
@@ -25,7 +28,7 @@ class LogHandler(FileSystemEventHandler):
     def __init__(self, config, api_endpoint):
         self.config = config
         self.api_endpoint = api_endpoint
-        self.adapters = {source["adapter"]: load_adapter(source["adapter"]) for source in config["sources"]}
+        self.adapters = {source.get("adapter", "default"): load_adapter(source.get("adapter", "default")) for source in config["sources"]}
         self.last_positions = {source["path"]: 0 for source in config["sources"]}  # Track last read position
         self.last_processed = {source["path"]: 0 for source in config["sources"]}  # Track last processed time
 
@@ -43,7 +46,7 @@ class LogHandler(FileSystemEventHandler):
                     f.seek(self.last_positions[source["path"]])
                     new_logs = f.read()
                     if new_logs:  # Only process if there are new lines
-                        normalized_logs = self.adapters[source["adapter"]](new_logs)
+                        normalized_logs = self.adapters[source.get("adapter", "default")](new_logs)
                         self.send_to_api(normalized_logs, source["path"])
                         # Update the last position to the end of the file
                         self.last_positions[source["path"]] = f.tell()
